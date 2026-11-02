@@ -45,7 +45,7 @@
       "maximize": false,
       "hidden": false,
       "resizable": false,
-      "transparent": false,
+      "transparent": true,
       "frame": false,
       "exitProcessOnClose": false
     },
