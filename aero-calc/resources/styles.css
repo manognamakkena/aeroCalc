@@ -1,20 +1,26 @@
-@import "tailwindcss";
-
 body {
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(assets/aeroBG.png);
+    background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .display {
     width: 90vw;
     height: 20vh;
-    background-image: url(assets/displayBar.png);
-    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    /*background-image: url(assets/displayBar.png);
+    background-size: cover;*/
+    background-color: rgba(0, 0, 0, 0.29);
+    color: white;
+    font-size: 2rem;
+    font-family: Tropi Land;
 }
 
 .keys {
@@ -34,6 +40,11 @@ body {
     background-color: none;
     border: none;
     fill: none;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-family: Tropi Land;
+    cursor: pointer;
 }
 
 #neutralinoapp {

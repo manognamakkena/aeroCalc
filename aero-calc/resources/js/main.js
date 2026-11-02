@@ -9,13 +9,6 @@
     with details regarding the running Neutralino application, including
     its ID, port, operating system, and version information.
 */
-function showInfo() {
-    document.getElementById('info').innerHTML = `
-        ${NL_APPID} is running on port ${NL_PORT} inside ${NL_OS}
-        <br/><br/>
-        <span>server: v${NL_VERSION} . client: v${NL_CVERSION}</span>
-        `;
-}
 
 /*
     Function to open the official Neutralino documentation in the default web browser.
@@ -38,7 +31,7 @@ function openTutorial() {
 */
 function setTray() {
     // Tray menu is only available in window mode
-    if(NL_MODE != "window") {
+    if (NL_MODE != "window") {
         console.log("INFO: Tray menu is only available in the window mode.");
         return;
     }
@@ -47,9 +40,9 @@ function setTray() {
     let tray = {
         icon: "/resources/icons/trayIcon.png",
         menuItems: [
-            {id: "VERSION", text: "Get version"},
-            {id: "SEP", text: "-"},
-            {id: "QUIT", text: "Quit"}
+            { id: "VERSION", text: "Get version" },
+            { id: "SEP", text: "-" },
+            { id: "QUIT", text: "Quit" }
         ]
     };
 
@@ -63,7 +56,7 @@ function setTray() {
     such as displaying version information or exiting the application.
 */
 function onTrayMenuItemClicked(event) {
-    switch(event.detail.id) {
+    switch (event.detail.id) {
         case "VERSION":
             // Display version information
             Neutralino.os.showMessageBox("Version information",
@@ -91,9 +84,8 @@ Neutralino.events.on("trayMenuItemClicked", onTrayMenuItemClicked);
 Neutralino.events.on("windowClose", onWindowClose);
 
 // Conditional initialization: Set up system tray if not running on macOS
-if(NL_OS != "Darwin") { // TODO: Fix https://github.com/neutralinojs/neutralinojs/issues/615
+if (NL_OS != "Darwin") { // TODO: Fix https://github.com/neutralinojs/neutralinojs/issues/615
     setTray();
 }
 
 // Display app information
-showInfo();

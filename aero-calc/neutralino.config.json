@@ -34,9 +34,9 @@
     "window": {
       "title": "aero-calc",
       "width": 446,
-      "height": 675,
+      "height": 673,
       "minWidth": 446,
-      "minHeight": 647,
+      "minHeight": 673,
       "center": true,
       "fullScreen": false,
       "icon": "",
