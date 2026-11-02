@@ -1,9 +1,39 @@
+@import "tailwindcss";
+
 body {
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #b0cfeba4;
+    background-image: url(assets/aeroBG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.display {
+    width: 90vw;
+    height: 20vh;
+    background-image: url(assets/displayBar.png);
+    background-size: cover;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 3vh;
+
+}
+
+.bubble {
+    width: 17.5vw;
+    height: 13vh;
+    background: none;
+    background-image: url(assets/bubble.png);
+    background-size: cover;
+    background-color: none;
+    border: none;
+    fill: none;
 }
 
 #neutralinoapp {

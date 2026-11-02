@@ -627,4 +627,4 @@ export {
 
 export as namespace Neutralino;
 
-export {};
+export { };

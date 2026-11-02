@@ -33,10 +33,10 @@
   "modes": {
     "window": {
       "title": "aero-calc",
-      "width": 492,
-      "height": 630,
-      "minWidth": 392,
-      "minHeight": 530,
+      "width": 446,
+      "height": 675,
+      "minWidth": 446,
+      "minHeight": 647,
       "center": true,
       "fullScreen": false,
       "icon": "",
@@ -45,8 +45,8 @@
       "maximize": false,
       "hidden": false,
       "resizable": false,
-      "transparent": true,
-      "frame": false,
+      "transparent": false,
+      "frame": true,
       "exitProcessOnClose": false
     },
     "browser": {
