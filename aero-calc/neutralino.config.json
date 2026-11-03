@@ -35,11 +35,11 @@
       "title": "aero-calc",
       "width": 446,
       "height": 673,
-      "minWidth": 446,
-      "minHeight": 673,
+      "min-width": 446,
+      "min-height": 673,
       "center": true,
       "fullScreen": false,
-      "icon": "",
+      "icon": "/resources/assets/bubble.png",
       "enableInspector": true,
       "borderless": false,
       "maximize": false,
@@ -47,6 +47,7 @@
       "resizable": false,
       "transparent": false,
       "frame": true,
+      "useSavedState": false,
       "exitProcessOnClose": false
     },
     "browser": {

@@ -11,15 +11,14 @@ body {
 }
 
 .display {
-    width: 90vw;
+    width: 85vw;
     height: 20vh;
     display: flex;
     justify-content: flex-end;
-    /*background-image: url(assets/displayBar.png);
-    background-size: cover;*/
-    background-color: rgba(0, 0, 0, 0.29);
+    background-image: url(assets/displayBar.png);
+    background-size: cover;
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: Tropi Land;
 }
 
@@ -40,7 +39,7 @@ body {
     background-color: none;
     border: none;
     fill: none;
-    font-size: 2rem;
+    font-size: 2.3rem;
     text-align: center;
     color: white;
     font-family: Tropi Land;
