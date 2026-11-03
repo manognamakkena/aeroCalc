@@ -39,7 +39,7 @@
       "min-height": 673,
       "center": true,
       "fullScreen": false,
-      "icon": "/resources/assets/bubble.png",
+      "icon": "/resources/assets/aero-calc-logo.png",
       "enableInspector": true,
       "borderless": false,
       "maximize": false,
